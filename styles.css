@@ -3,6 +3,7 @@ body {
 	background-attachment: fixed;
 	color: white;
 	font-family: courier new;
+	padding(100px)
 }
 a{
 	color: yellow;

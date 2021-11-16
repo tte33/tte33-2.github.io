@@ -1,0 +1,50 @@
+<html>
+
+<head>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	
+	<span>
+	<p></p>
+	<p id="a" onclick="click('a')">a.</p>
+	<p id="b" onclick="click('b')">b.</p>
+	<p id="c" onclick="click('c')">c.</p>
+	<p id="d" onclick="click('d')">d.</p>
+	</span>
+	
+	<script type="text/javascript">
+		
+		function click(letter){
+			 let clickMessage = "Clicked"
+			 let x = document.getElementById(letter)
+			 
+			 	if (x.innerHTML == clickMessage) {
+			 		x.innerHTML = "a."
+			 		console.log("true")
+			 	} else {
+			 		x.innerHTML = clickMessage
+			 		console.log(x.innerHTML)
+			 		console.log("false")
+			 	}
+
+			 	console.log(x.innerHTML)
+			
+	</script>
+	
+	
+	
+	
+	
+	
+	
+</body>
+
+
+
+
+
+
+
+</html>

@@ -5,46 +5,36 @@
 </head>
 
 <body>
+	<p>
+	<span id="a" class="button off" onclick="letterClick('a')">power on</span>
+	<span id="b" class="button off" onclick="letterClick('b')">Igniter system</span>
+	<span id="c" class="button off" onclick="letterClick('c')">Oxygen</span>
+	<span id="d" class="button off" onclick="letterClick('d')">Nitrous Oxide</span>
+	<span id="e" class="button off" onclick="letterClick('e')">e?</span>
+	<span id="f" class="button off" onclick="letterClick('f')">f?</span>
+	</p>
 	
-	<span>
-	<p></p>
-	<p id="a" onclick="click('a')">a.</p>
-	<p id="b" onclick="click('b')">b.</p>
-	<p id="c" onclick="click('c')">c.</p>
-	<p id="d" onclick="click('d')">d.</p>
-	</span>
+	<!-- 
+<p>
+	<div id="g" class="light lit" onclick="letterClick('g')"> </div>
+	</p>
+ -->
 	
-	<script type="text/javascript">
-		
-		function click(letter){
-			 let clickMessage = "Clicked"
-			 let x = document.getElementById(letter)
-			 
-			 	if (x.innerHTML == clickMessage) {
-			 		x.innerHTML = "a."
-			 		console.log("true")
-			 	} else {
-			 		x.innerHTML = clickMessage
-			 		console.log(x.innerHTML)
-			 		console.log("false")
-			 	}
-
-			 	console.log(x.innerHTML)
+	<script>
+		function letterClick(input){
+			let x = document.getElementById(input);			
 			
+			let clickMessage = "Clicked"
+
+			if (x.className == "button off") {
+				x.className = "button on";
+				
+			} else if (x.className == "button on") {
+				x.className = "button off";
+			}	
+		}
 	</script>
 	
-	
-	
-	
-	
-	
-	
 </body>
-
-
-
-
-
-
 
 </html>

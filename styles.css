@@ -15,3 +15,18 @@ a{
 a:hover{
 	color: red;
 }
+
+.button{
+	font-family: courier new;
+	padding:  15px;
+	border:  2pt black solid;
+	background-color: #111;
+}
+
+.on{
+	color:  green;
+}
+
+.off{
+	color:  red;
+}

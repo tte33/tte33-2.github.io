@@ -30,3 +30,7 @@ a:hover{
 .off{
 	color:  red;
 }
+
+.inactive{
+	color:  gray;
+}

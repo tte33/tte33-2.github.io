@@ -8,12 +8,12 @@
 
 <body>
 	
-	<button id="a" class="button off" onclick="tappedPowerButton()">power on</button>
-	<button id="b" class="button off" onclick="tappedButton('b')">Igniter system</button>
-	<button id="c" class="button off" onclick="tappedButton('c')">Oxygen</button>
-	<button id="d" class="button off" onclick="tappedButton('d')">Nitrous Oxide</button>
-	<button id="e" class="button off" onclick="tappedButton('e')">e?</button>
-	<button id="f" class="button off" onclick="tappedButton('f')">f?</button>
+	<button id="a" class="button off inactive" onclick="tappedPowerButton()">power on</button>
+	<button id="b" class="button off inactive" onclick="tappedButton('b')">Igniter system</button>
+	<button id="c" class="button off inactive" onclick="tappedButton('c')">Oxygen</button>
+	<button id="d" class="button off inactive" onclick="tappedButton('d')">Nitrous Oxide</button>
+	<button id="e" class="button off inactive" onclick="tappedButton('e')">e?</button>
+	<button id="f" class="button off inactive" onclick="tappedButton('f')">f?</button>
 	
 	<!-- 
 <p>
@@ -58,6 +58,16 @@
 					x.className = "button off";  
 				}
 		}
+		
+		function activateButtons(){
+			let buttons = document.getElementsByClassName('button');
+
+			for(let i = 0; i < buttons.length; i++){
+				buttons[i].className = "button off"
+			}
+		}
+
+
 		///////////////////
 		
 		
@@ -68,6 +78,7 @@
 			powerOn = !powerOn;
 
 			if (powerOn){
+				activateButtons();
 				turnPowerButtonOn();
 			} else {
 				turnAllButtonsOff();

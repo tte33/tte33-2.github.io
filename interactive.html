@@ -35,13 +35,6 @@
 		
 		
 		//Update page functions
-		function turnAllButtonsOff(){
-			let buttons = document.getElementsByClassName('button');
-			
-			for(let i = 0; i < buttons.length; i++){
-				buttons[i].className = "button off";
-			}
-		}
 		
 		function turnPowerButtonOn(){
 			let powerButton = document.getElementById('a');
@@ -68,6 +61,18 @@
 		}
 
 
+		function inactivateButtons(){
+			let buttons = document.getElementsByClassName('button');
+
+			for (let i = 0; i < buttons.length; i++){
+				buttons[i].className = 'button off inactive'
+			}
+
+			let powerButton = document.getElementById('a')
+			powerButton.className = "button off"
+		}
+
+
 		///////////////////
 		
 		
@@ -81,7 +86,7 @@
 				activateButtons();
 				turnPowerButtonOn();
 			} else {
-				turnAllButtonsOff();
+				inactivateButtons();
 			}
 		}
 	

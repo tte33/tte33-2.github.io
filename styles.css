@@ -34,3 +34,19 @@ a:hover{
 .inactive{
 	color:  gray;
 }
+
+#box{
+	width: 100px;
+	height: 100px;
+	background-color: red;
+}
+
+@keyframes example {
+	from {background-color:  red;}
+	to {background-color:  blue;}
+}
+
+.animatedThing {
+	animation-name:  example;
+	animation-duration:  4s;
+}

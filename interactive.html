@@ -1,4 +1,3 @@
-
 <html>
 
 <head>
@@ -14,6 +13,10 @@
 	<button id="d" class="button off inactive" onclick="tappedButton('d')">Nitrous Oxide</button>
 	<button id="e" class="button off inactive" onclick="tappedButton('e')">e?</button>
 	<button id="f" class="button off inactive" onclick="tappedButton('f')">f?</button>
+
+	<div id="box" onclick="tappedBox()"></div>
+
+
 	
 	<!-- 
 <p>
@@ -35,6 +38,8 @@
 		
 		
 		//Update page functions
+
+
 		
 		function turnPowerButtonOn(){
 			let powerButton = document.getElementById('a');
@@ -79,6 +84,14 @@
 		
 		
 		//actions
+
+		function tappedBox(){
+			let box = document.getElementById('box');
+			box.className = "animatedThing";
+			console.log("button tapped")
+		}
+
+
 		function tappedPowerButton(){
 			powerOn = !powerOn;
 

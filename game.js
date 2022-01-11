@@ -1,15 +1,13 @@
-var crossIsCurrentlyPlaying = true
+var isCrossTurn = True;
 
-function tappedSquare(id) {
-	var button = document.getElementById(id);
-
-	if (crossIsCurrentlyPlaying){
-		button.classname = "cross"
-	} else{
-		button.classname = "nought"
+function tappedSquare(buttonID){
+	let button = document.getElementById(buttonID);
+	if(isCrossTurn){
+		button.className = "square cross";
+	} else {
+		button.className = "square nought";
 	}
-
-	console.log(crossIsCurrentlyPlaying)
-
-	crossIsCurrentlyPlaying = !crossIsCurrentlyPlaying
+	
+	isCrossTurn = !isCrossTurn;
+	
 }

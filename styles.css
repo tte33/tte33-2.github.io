@@ -43,7 +43,7 @@ a:hover{
 
 @keyframes example {
 	from {background-color:  red;}
-	to {background-color:  blue;}
+	to {background-color:  yellow;}
 }
 
 .animatedThing {

@@ -1,4 +1,4 @@
-var isCrossTurn = True;
+var isCrossTurn = true;
 
 function tappedSquare(buttonID){
 	let button = document.getElementById(buttonID);

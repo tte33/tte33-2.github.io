@@ -3,11 +3,11 @@ var isCrossTurn = true;
 function tappedSquare(buttonID){
 	let button = document.getElementById(buttonID);
 	if(isCrossTurn){
-		button.className = "square cross";
-		button.innerHTML = "X";
+		let button.className = "square cross";
+		let button.innerHTML = "X";
 	} else {
-		button.className = "square nought";
-		button.innerHTML = "0";
+		let button.className = "square nought";
+		let button.innerHTML = "0";
 	}
 	
 	isCrossTurn = !isCrossTurn;

@@ -17,8 +17,8 @@ function tappedSquare(buttonID){
 function reset(){
 	let buttons = document.getElementsByClassName('square');
 
-			for (let i = 0; i < buttons.length; i++){
-				buttons[i].className = 'square'
-				buttons[i].
+	for (var i = 0; i < buttons.length; i++){
+		buttons[i].className = 'square'
+		buttons[i].
 			}
 }

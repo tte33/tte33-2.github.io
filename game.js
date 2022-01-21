@@ -20,5 +20,4 @@ function reset(){
 	for (var i = 0; i < buttons.length; i++){
 		buttons[i].className = 'square'
 		buttons[i].
-			}
 }

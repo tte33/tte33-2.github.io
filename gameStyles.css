@@ -1,5 +1,9 @@
 /* Game CSS */
 
+body {
+	background-color: black;
+}
+
 .container {
 	width: 350px;
 	height: 350px;
@@ -10,14 +14,24 @@
 	width: 100px;
     height: 100px;
 /*     float: left; */
-    background: lightgray;   
+    background: lightgray;
+
+
+    font-family: "impact";
+	font:  100px;
+	line-height: 5px;   
 /*     margin: 15px; */
 }
 
+
 .container > .cross {
-	background-color : green;
+	background-color : rgb(68, 255, 0);
 }
 
 .container > .nought {
-	background-color : black;
+	background-color : rgb(0, 103, 203);
+}
+
+#reset {
+	background-color:  red;
 }

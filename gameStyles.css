@@ -21,6 +21,8 @@ body {
 	font:  100px;
 	line-height: 5px;   
 /*     margin: 15px; */
+
+	vertical-align: bottom;
 }
 
 

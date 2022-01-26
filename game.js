@@ -1,31 +1,33 @@
 var isCrossTurn = true;
 
+
 function tappedSquare(buttonID){
-	let button = document.getElementById(buttonID);
-	if (button.className == "square"){
-		console.log("im in...")
-		if(isCrossTurn){
-			 button.className = "cross";
-		 	 button.innerHTML = "X";
-		} else {
-			 button.className = "nought";
-		 	 button.innerHTML = "0";
-		}
-		isCrossTurn = !isCrossTurn;
-	}
-	else {
+	var button = document.getElementById(buttonID);
+
+// 	check to see if the button 
+	if(button.className == "square cross" || button.className == "square nought"){
+		console.log("tried to click on an occupied square!");
 		return;
 	}
 	
+	if(isCrossTurn){
+		button.className = "square cross";
+        button.innerHTML = "x";
+	} else {
+		button.className = "square nought";
+        button.innerHTML = "o";
+	}
+	isCrossTurn = !isCrossTurn;
 }
 
-function reset(buttonID){
-	let thisButtonId = document.getElementById(buttonID)
-	console.log("reseting")
-	let buttons = document.getElementsByClassName('square');
 
-	for (let i = 0; i < buttons.length; i++){
-		buttons[i].className = 'square';
-		console.log(buttons[i].thisButtonId)
-			}
+function reset(){
+    //reset the buttons!
+    var buttons = document.getElementsByClassName("square");
+    
+    for(var i=0; i < buttons.length; i++){
+        buttons[i].innerHTML = "";
+        buttons[i].className = "square";
+    }
+    isCrossTurn = true;
 }

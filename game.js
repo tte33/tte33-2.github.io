@@ -2,23 +2,30 @@ var isCrossTurn = true;
 
 function tappedSquare(buttonID){
 	let button = document.getElementById(buttonID);
-	if button.className = "square"{
+	if (button.className == "square"){
+		console.log("im in...")
 		if(isCrossTurn){
-			 button.className = "cross"
-		 	button.innerHTML = "X"
+			 button.className = "cross";
+		 	 button.innerHTML = "X";
 		} else {
-			 button.className = "nought"
-		 	 button.innerHTML = "0"
+			 button.className = "nought";
+		 	 button.innerHTML = "0";
+		}
+		isCrossTurn = !isCrossTurn;
 	}
+	else {
+		return;
 	}
-	isCrossTurn = !isCrossTurn;
 	
 }
 
-function reset(){
+function reset(buttonID){
+	let thisButtonId = document.getElementById(buttonID)
+	console.log("reseting")
 	let buttons = document.getElementsByClassName('square');
 
 	for (let i = 0; i < buttons.length; i++){
 		buttons[i].className = 'square';
+		console.log(buttons[i].thisButtonId)
 			}
 }

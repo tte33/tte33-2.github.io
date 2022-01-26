@@ -26,7 +26,6 @@ function reset(){
     var buttons = document.getElementsByClassName("square");
     
     for(var i=0; i < buttons.length; i++){
-        buttons[i].innerHTML = "";
         buttons[i].className = "square";
     }
     isCrossTurn = true;

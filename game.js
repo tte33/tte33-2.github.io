@@ -1,6 +1,6 @@
 var isCrossTurn = true;
 
-var WINNING_SCRIPTS = ["abc", "def", "ghi", "adg", "beh", "cfi", "aei", "ceg"]
+var WINNING_SCRIPTS = ["abc", "def", "ghi", "adg", "beh", "cfi", "aei", "ceg"];
 
 var noughtsSquares = [];
 var crossSquares = [];
@@ -60,10 +60,9 @@ function checkForAWinner(){
 function displayWinner() {
 	var banner = document.getElementById(winner);
 	if (isCrossTurn){
-		console.log('crosses wins!');
+		alert('crosses wins!');
 	} else {
-		console.log('noughts wins!');
-	}
+		alert('noughts wins!');
 }
 
 function tappedSquare(buttonID){
@@ -89,7 +88,7 @@ function tappedSquare(buttonID){
 	checkForAWinner()
 
 	if (winner != "") {
-		displayWinner()
+		displayWinner();
 	}
 
 	isCrossTurn = !isCrossTurn;
@@ -107,7 +106,8 @@ function reset(){
     for(var i=0; i < buttons.length; i++){
         buttons[i].className = "square";
         buttons[i].innerHTML = "";
-				console.log("reset")
+				console.log("reset");
     }
-    isCrossTurn = true;
+  isCrossTurn = true;
+}
 }

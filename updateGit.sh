@@ -1,8 +1,4 @@
-if [$1 -eq ""];
-then
-	echo "-- enter text:"
-	exit
-fi
+
 git add --all
 echo "-- commiting changes"
 git commit -m ”$1”
